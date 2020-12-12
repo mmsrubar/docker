@@ -1,0 +1,12 @@
+$TTL 3h
+$ORIGIN 100.168.192.in-addr.arpa.
+
+@ IN SOA ns.example.org. al.example.org. (
+                          1        ; Serial
+                          3h       ; Refresh after 3 hours
+                          1h       ; Retry after 1 hour
+                          1w       ; Expire after 1 week
+                          1h )     ; Negative caching TTL of 1 hour
+
+    IN NS   ns.example.org.
+6   IN PTR  ns.example.org.

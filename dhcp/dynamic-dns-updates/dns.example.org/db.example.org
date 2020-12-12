@@ -1,0 +1,12 @@
+$TTL 3h
+$ORIGIN example.org.
+
+@ IN SOA example.org. al.example.org. (
+                          2        ; Serial
+                          3h       ; Refresh after 3 hours
+                          1h       ; Retry after 1 hour
+                          1w       ; Expire after 1 week
+                          1h )     ; Negative caching TTL of 1 hour
+
+   IN NS   ns.example.org.
+ns IN A    192.168.100.6
